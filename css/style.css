@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'arial' sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header img{
+    position: left;
+    height: 10rem;
+    width: 10rem;
+}
+.header button{
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.banner{
+    height: 120vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('/img/logo\ 1.webp') center/cover;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: white;
+}
+
+.banner-content {
+    padding: 2rem;
+}
+.banner-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+/* Estilo do botão de reserva */
+.btn-aluguel{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-aluguel:hover {
+    background-color: #ffed4a;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    
+}
+/* Estilo dos botões de categorias */
+.btn-menu{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-menu:hover {
+    background-color: #877d21;
+}
+
+/*estilo dos produstos*/
+.produtos-lista{
+    background-color: #f9f9f9;
+    align-items: left;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+.produtos img{
+    width: 10rem;
+    height: 10rem;
+}
+
+
