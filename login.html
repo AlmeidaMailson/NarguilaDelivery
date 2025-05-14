@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Lgin</title>
+    <link rel="stylesheet" href="assets/css/loginusuario.css">
+    <title>Login</title>
 </head>
+
 <body>
-    <div class="neumorphic neumorphic-card">
-        <h1>Login</h1>
-            <label  for="username">Usuário:</label><br>
-            <input class="neumorphic neumorphic-input" type="text" id="username" name="username" required><br><br>
-            <label for="password">Senha:</label><br>
-            <input class="neumorphic neumorphic-input" type="password" id="password" name="password" required><br><br>
-            <button class="neumorphic neumorphic-button" type="submit">Entrar</button>
+<section class="container">
+    <div class="macacada">
+        
     </div>
-    
+    <div class="ring">
+        <i style="--clr:#00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#fffd44"></i>
+        <div class="login">
+            <h2>Login</h2>
+            <select id="tipoLogin" class="select">
+                <option class="option" value=""><h2>Selecione seu tipo</h2></option>
+                <option class="option" value="index.html">Usuário</option>
+                <option class="option" value="entregador">Entregador</option>
+                <option class="option" value="Fornecedor">Fornecedor</option>
+            </select>
+            <div class="inputBx">
+                <input type="text" id="email" name="email" placeholder="Usuario" required>
+            </div>
+            <div class="inputBx">
+                <input type="password" id="senha" name="password" placeholder="Senha">
+            </div>
+            <div class="inputBx">
+                <input type="submit" name="" onclick="logar()" id="" value="ENTRAR">
+            </div>
+            <div class="links">
+                <a href="#">Esquece a Senha</a>
+                <a href="#">CADASTRAR-SE</a>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+<script src="assets/js/Script.js"></script>
+
 </body>
+
 </html>

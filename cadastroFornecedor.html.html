@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/cadastroFornecedor.css.css">
+  <title>Cadastro de Fornecedor</title>
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-image">
+      <img src="https://media.istockphoto.com/id/1448353401/pt/vetorial/shisha-and-accessories-sketch-hookah-kaloud-tongs-charcoal-tobacco-hand-drawn-vintage.jpg?s=612x612&w=0&k=20&c=46FEjfmWsHtllEQSCMVhJIYovyKXL1YzYZ8EVsXy6Es=">
+    </div>
+
+    <div class="form">
+      <form id="formulario">
+
+        <!-- Barra de Progresso -->
+        <div class="progress-text" id="progressText">Etapa 1 de 3</div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Etapa 1: Dados Pessoais -->
+        <div id="etapa1">
+          <div class="form-header">
+            <h1>Cadastro</h1>
+          </div>
+
+          <div class="input-group">
+            <!-- (mesmos campos que você já tinha) -->
+            <div class="input-box">
+              <label for="firstname"> Nome da Loja</label>
+              <input id="firstname" type="text" name="firstname" required placeholder="Digite o nome da sua loja">
+            </div>
+
+            <div class="input-box">
+              <label for="lastname">CNPJ</label>
+              <input id="lastname" type="text" name="lastname" required placeholder="Digite seu CNPJ">
+            </div>
+
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required placeholder="Digite seu email">
+            </div>
+
+            <div class="input-box">
+              <label for="number">Celular</label>
+              <input id="number" type="tel" name="number" required placeholder="(xx) xxxxx-xxxx">
+            </div>
+
+            <div class="input-box">
+              <label for="password">Senha</label>
+              <input id="password" type="password" name="password" required placeholder="Digite sua senha">
+            </div>
+
+            <div class="input-box">
+              <label for="Confirpassword">Confirme sua Senha</label>
+              <input id="Confirpassword" type="password" name="Confirpassword" required placeholder="Confirme sua senha">
+            </div>
+          </div>
+
+          <div class="gender-inputs">
+            <div class="gender-title">
+              <h6>Gênero</h6>
+            </div>
+
+            <div class="gender-group">
+              <div class="gender-input">
+                <input type="radio" id="female" name="gender" required>
+                <label for="female">Feminino</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" id="male" name="gender">
+                <label for="male">Masculino</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" id="others" name="gender">
+                <label for="others">Outros</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" id="none" name="gender">
+                <label for="none">Prefiro não dizer</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="continue-button">
+            <button type="button" onclick="validarEtapa1()">Continuar</button>
+          </div>
+        </div>
+
+        <!-- Etapa 2: Endereço -->
+        <div id="etapa2" style="display: none;">
+          <div class="form-header">
+            <h1>Endereço</h1>
+          </div>
+
+          <div class="input-group">
+            <!-- Campos de endereço -->
+            <div class="input-box">
+              <label for="address">Endereço</label>
+              <input id="address" type="text" name="address" required placeholder="Digite seu endereço">
+            </div>
+
+            <div class="input-box">
+              <label for="numberAddress">Número</label>
+              <input id="numberAddress" type="text" name="numberAddress" required placeholder="Número da residência">
+            </div>
+
+            <div class="input-box">
+              <label for="neighborhood">Bairro</label>
+              <input id="neighborhood" type="text" name="neighborhood" required placeholder="Digite seu bairro">
+            </div>
+
+            <div class="input-box">
+              <label for="city">Cidade</label>
+              <input id="city" type="text" name="city" required placeholder="Digite sua cidade">
+            </div>
+
+            <div class="input-box">
+              <label for="state">Estado</label>
+              <input id="state" type="text" name="state" required placeholder="Digite seu estado">
+            </div>
+
+            <div class="input-box">
+              <label for="cep">CEP</label>
+              <input id="cep" type="text" name="cep" required placeholder="Digite seu CEP">
+            </div>
+          </div>
+
+          <div class="continue-button">
+            <button type="button" onclick="validarEtapa2()">Continuar</button>
+          </div>
+        </div>
+
+        <!-- Etapa 3: Estrutura do Fornecedor -->
+        <div id="etapa3" style="display: none;">
+          <div class="form-header">
+            <h1>Informações do Fornecedor</h1>
+          </div>
+
+          <div class="input-group">
+            <div class="input-box">
+              <label>Possui frota própria?</label>
+              <div class="gender-group">
+                <div class="gender-input">
+                  <input type="radio" id="frotaSim" name="frota" value="Sim" onchange="mostrarCampoFrota(true)" required>
+                  <label for="frotaSim">Sim</label>
+                </div>
+
+                <div class="gender-input">
+                  <input type="radio" id="frotaNao" name="frota" value="Não" onchange="mostrarCampoFrota(false)">
+                  <label for="frotaNao">Não</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-box" id="quantidadeFrota" style="display: none;">
+              <label for="quantidade">Quantidade de veículos</label>
+              <input id="quantidade" type="number" name="quantidade" min="1" placeholder="Digite a quantidade">
+            </div>
+          </div>
+
+          <div class="continue-button">
+            <button type="submit">Finalizar Cadastro</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/Script.js"></script>
+</body>
+</html>

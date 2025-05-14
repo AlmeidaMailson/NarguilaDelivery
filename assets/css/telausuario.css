@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.header {
+
+    background: linear-gradient(to right, #050212, #31384a, #5a7c6f);
+    color: white;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-container img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-header nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu-header nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-header img {
+    margin-left: 50px;
+    align-items: center;
+}
+
+.menu-header {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+
+/* Search */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 20rem;
+    height: 50px;
+}
+
+.search-button {
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #3f2b96;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #ffd700;
+}
+
+.segundo-menu {
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #31384a;
+    height: 60px;
+}
+
+.segundo-menu-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.segundo-menu-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.segundo-menu-nav li {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.segundo-menu-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 20px;
+    transition: background-color 0.3s;
+}
+
+.segundo-menu-nav a:hover::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    border-bottom: #ffd700 solid 3px;
+    display: block;
+
+
+}
+
+.narguile-casa {
+    margin-top: 5px;
+    margin: 1px;
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 50px;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    background-image: url('https://solutudo-cdn.s3-sa-east-1.amazonaws.com/prod/adv_files/5c9d76e0-3688-4309-9f58-477fac1f1c33/64186944-dd4c-486a-b1eb-33acac1e09ff.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.narguile-casa-info {
+    margin-top: -10px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+}
+
+.narguile-casa-info h2 {
+    font-size: 5rem;
+    font-family: "Share Tech", sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.narguile-casa-info p {
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-family: "Share Tech", sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(9, 211, 117, 0.5);
+}
+
+.alugar-button {
+    margin-top: 110px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #3f2b96;
+    width: 70%;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.narguile-casa-image {
+    flex: 1;
+    margin-right: 100px;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10%;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
+}
+.slides {
+    gap: 20px;
+    display: flex;
+    width: 300%;
+    animation: slide 20s infinite;
+    
+  }
+  .slide {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10%;
+    
+    
+  }
+
+@keyframes slide{
+    0% {transform: translatex(0);}
+    33% {transform: translatex(-100%);}
+    66% {transform: translatex(-200%);}
+    100% {transform: translatex(-300);}
+}
+footer {
+    background: linear-gradient(to right,  #050212, #31384a, #5a7c6f);
+    color: white;
+    padding: 40px 20px;
+}
+
+.rodape-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rodape-section img {
+    max-width: 150px;
+}
+
+.rodape-column {
+    min-width: 180px;
+}
+
+.rodape-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.rodape-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rodape-column ul li {
+    margin: 8px 0;
+}
+
+.rodape-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rodape-column ul li a:hover {
+    color: #ffd700;
+}
+
+/* REDES SOCIAIS */
+.rede-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rede-sociais h3 {
+    margin-bottom: 10px;
+}
+
+.rede-sociais ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.rede-sociais ul li img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.rede-sociais ul li img:hover {
+    transform: scale(1.1);
+}
+
+/* RODAPÉ INFERIOR */
+.rodape-botton {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+@media (max-width: 768px) {
+    .banner-content h2 {
+        font-size: 3rem;
+    }
+
+    .header img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .btn-menu {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .produtos img {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+.narguile-montado-section{
+    margin-top: 20px;
+}
+.narguile-montado{
+        margin-top: 50px;
+        margin: 1px;
+        display: flex;
+        height: 800px;
+        align-items: center;
+        justify-content: center;
+        padding: 1px 50px;
+        background-color: #333;
+}
