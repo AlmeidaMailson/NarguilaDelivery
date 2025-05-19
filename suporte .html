@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="assets/css/suporte.css" />
+  <title>Suporte - Narguilé Delivery</title>
+</head>
+<body>
+  <div class="suporte-container">
+    <form id="formSuporte" class="suporte-card">
+      <h1>🛠️ Central de Suporte</h1>
+
+      <label for="tipoUsuario">Tipo de Usuário</label>
+      <select id="tipoUsuario" onchange="atualizarLabel()" required>
+        <option value="">Selecione...</option>
+        <option value="final">Usuário Final</option>
+        <option value="entregador">Entregador</option>
+        <option value="fornecedor">Fornecedor</option>
+      </select>
+
+      <label id="labelDocumento" for="documento">CPF/CNPJ</label>
+      <input type="text" id="documento" placeholder="Digite seu CPF ou CNPJ" required />
+
+      <label for="descricao">Descrição do Problema</label>
+      <textarea id="descricao" rows="4" placeholder="Descreva o problema com detalhes" required></textarea>
+
+      <label for="mensagem">Mensagem complementar (opcional)</label>
+      <textarea id="mensagem" rows="3" placeholder="Se quiser, adicione mais detalhes"></textarea>
+
+      <button type="button" onclick="enviarChamado()">📨 Enviar Chamado</button>
+    </form>
+  </div>
+
+  <script src="assets/js/suporte.js"></script>
+</body>
+</html>

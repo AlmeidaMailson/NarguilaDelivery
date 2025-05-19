@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- Layout Principal --- */
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #050212, #31384a, #5a7c6f);
+}
+
+.container {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 2);
+  border-radius: 20rem;
+}
+
+/* --- Área da Imagem --- */
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+}
+
+.form-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-entregador {
+  height: 90%;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+/* --- Formulário --- */
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 20px;
+    background: transparent; /* Transparente nível 4 */
+    backdrop-filter: blur(12px); /* Desfoque de fundo */
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .form label,
+  .form input,
+  .form h1 {
+    color: #fff; /* ou #f0f0f0 para contraste em fundo escuro */
+  }
+    
+
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center ;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+
+.form-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* --- Botão de Login --- */
+.login-button {
+  display: flex;
+  align-items: center;
+}
+
+.login-button button {
+  border: none;
+  background-color: #03030b;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #6b63fff1;
+}
+
+.login-button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* --- Grupos de Inputs --- */
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+ 
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+.gender-title h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+/* --- Gênero --- */
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+  color: #fff;
+}
+
+.gender-inputs {
+  margin-top: 1rem;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.gender-input input {
+  margin-right: 0.35rem;
+}
+
+.gender-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* --- Botão Continuar --- */
+.continue-button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #6c63ff;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button button:hover {
+  background-color: #6b63fff1;
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* --- Barra de Progresso --- */
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #6c63ff;
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* --- Responsivo --- */
+@media screen and (max-width: 1330px) {
+  .form-image {
+    display: none;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  .input-group {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    max-height: 10rem;
+    padding-right: 5rem;
+  }
+
+  .gender-group {
+    flex-direction: column;
+  }
+}
+
+
+

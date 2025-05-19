@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://uploads.bpmoney.com.br/2024/12/ut0gNqHf-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.suporte-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+}
+
+.suporte-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fadeIn 0.6s ease;
+}
+
+.suporte-card h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffffdd;
+}
+
+.suporte-card label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #ffffffcc;
+}
+
+.suporte-card input,
+.suporte-card select,
+.suporte-card textarea {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.suporte-card input:focus,
+.suporte-card select:focus,
+.suporte-card textarea:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none;
+  box-shadow: 0 0 0 2px #6c63ff;
+}
+
+.suporte-card button {
+  padding: 0.9rem;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.suporte-card button:hover {
+  background-color: #554bff;
+  transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  

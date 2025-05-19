@@ -1,109 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/TelaFornecedor.css">
-    <title>Tela Fornecedor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="assets/css/TelaFornecedor.css" />
+  <title>Fornecedor | Narguila Delivery</title>
 </head>
-
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <img src="assets/img/logo 1.webp" alt="Logo">
-            <h1 class="logo">Narguila Delivery</h1>
+
+  <header class="header">
+    <div class="logo-container">
+      <img src="assets/img/logo 1.webp" alt="Logo" class="logo-img" />
+      <h1 class="logo-title">Narguila Delivery</h1>
+    </div>
+
+    <nav class="nav-user">
+      <a href="usuario.html"><img src="assets/img/Logo_usuario.png" alt="Usuário" class="icon"/></a>
+      <a href="login.html" class="login-link">Entrar / Cadastrar</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <aside class="sidebar">
+      <button><img src="assets/img/icone-de-inicio.avif" class="icon"/>Início</button>
+      <button><img src="assets/img/icone de entrega.jpg" class="icon"/>Entregas</button>
+      <button><img src="assets/img/icone de naguile.png" class="icon"/>Narguilés</button>
+      <button><img src="assets/img/icone de suporte.avif" class="icon"/> Suporte</button>
+      <button><img src="assets/img/icone-de-carteira.jpg" class="icon"/><a href="suporte .html">Carteira</a></button>
+      <button><img src="assets/img/icone de configuracao.jpeg" class="icon"/>Configurações</button>
+      <button class="logout"><img src="assets/img/icone de sair.webp" class="icon"/>Sair</button>
+    </aside>
+
+    <section class="orders-section">
+      <div class="orders-header">
+        <button class="tab-btn active">Agora</button>
+        <button class="tab-btn">Agendados</button>
+      </div>
+
+      <div class="orders-filter">
+        <input type="text" placeholder="Buscar pedidos..." />
+        <select>
+          <option value="">Filtros</option>
+          <option value="entregues">Entregues</option>
+          <option value="cancelados">Cancelados</option>
+          <option value="aguardando">Aguardando</option>
+        </select>
+      </div>
+
+      <div class="orders-list">
+        <div class="order-card">
+          <div class="order-info">
+            <span>#9868</span>
+            <span>⏱ 5 min.</span>
+          </div>
+          <div class="order-actions">
+            <button>Entrega Própria</button>
+            <button>Via Delivery</button>
+          </div>
         </div>
 
-        <div class="menu-header">
-            <nav>
-                <ul>
-                    <a href="usuario"> <img src="assets/img/Logo_usuario.png" alt="" height="50px"></a>
-                    <li><a href="login.html">Entrar ou Se cadastrar</a></li>
-                </ul>
-            </nav>
+        <div class="order-card">
+          <div class="order-info">
+            <span>#98656</span>
+            <span>⏱ 10 min.</span>
+          </div>
+          <div class="order-actions">
+            <button>Entrega Própria</button>
+
+          </div>
         </div>
-    </header>
-    <br><br><br><br><br><br>
-    <div class="menu-latera">
-        <div class="menus">
-            <div class="menu-1">
-                <div>
-                    <button>Inicio</button>
-                </div>
-                <div>
-                    <Button>Entregas</Button>
-                </div>
-                <div>
-                    <button>Narguiles</button>
-                </div>
+      </div>
+    </section>
+      <main class="dashboard">
+    <section class="banner-section">
+      <div class="banner-card black"> <button><a href="cardapioNarguile.html">Adicione fotos do narguiles para vender mais</a></button></div>
+      <div class="banner-card black"> 🛒 Reponha seu estoque</div>
+      <div class="banner-card black"> 📱 Veja como e quando cancelar um pedido</div>
+    </section>
 
-                <div class="menu-2">
-                    <div>
-                        <button>Ajuda</button>
-                    </div>
-                    <div>
-                        <button>Configuraçãoes</button>
-                    </div>
-                    <div>
-                        <button>Sair</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pedidos-principal">
-            <div class="pedidos">
-                <div class="item1">
-                    <button>Agora</button>
-                </div>
-                <div class="item2">
-                    <button>Agendados</button>
-                </div>
-            </div>
-            <div class="pedidos2">
-                <div class="item-pedidos-buscar">
-                    <search>Buscar pedidos</search>
-                </div>
-                <div class="item-pedidos-filtro">
-                    <select name="optios" id="">
-                        <option value="op1">Filtros</option>
-                        <option value="op2">Entregues</option>
-                        <option value="op3">Cancelados</option>
-                        <option value="op4">Aguardando</option>
-                    </select>
-                </div>
-            </div>
-            <div class="pedidos3">
-                <div class="pedidos-pedente">
-                    <h2 class="pedentes-info">PEDENTE</h2>
-                    <h2 class="pedente-quantidade">2</h2>
-                </div>
+    <section class="info-section">
+      <div class="info-card">
+        <h3>Horário de funcionamento</h3>
+        <p>Hoje, 12/01</p>
+        <p>Amanhã, 13/01</p>
+        <div class="time-box">18:00 - 23:00</div>
+      </div>
+      <div class="info-card">
+        <h3>Itens do estoque em tempo real</h3>
+        <p class="number">100</p>
+      </div>
+      <div class="info-card">
+        <h3>Histórico de pedidos</h3>
+        <p>Terças</p>
+        <p>Pedidos (média): <strong>2</strong></p>
+        <p>Atrasos: <strong>0%</strong></p>
+        <p>Concluídos no prazo: <strong>100%</strong></p>
+      </div>
+      <div class="info-card">
+        <h3>Pedidos concluídos do mês</h3>
+        <p class="number">0</p>
+        <p>Mês atual</p>
+      </div>
+    </section>
+  </main>
+  </main>
 
-
-                <div class="pedidos-pedente-info">
-                    <div class="pedidos-pedente-info1">
-                        <h3 class="codigo-pedente">#9868</h3>
-                        <h3 class="tempo-pedente">5 min.</h3>
-                    </div>
-                    <div class="button-pedente">
-                        <button>Entrega Propria</button>
-                        <button>Via Delivery</button>
-                    </div>
-                </div>
-                <div class="pedidos-pedente-info">
-                    <div class="pedidos-pedente-info1">
-                        <h3 class="codigo-pedente">#98656</h3>
-                        <h3 class="tempo-pedente">10 min.</h3>
-                    </div>
-                    <div class="button-pedente">
-                        <button>Entrega Propria</button>
-                        <button>Via Delivery</button>
-                    </div>
-                </div>
-                
-            </div>
-            
-
+  <script src="assets/js/telaFornecedor.js"></script>
 </body>
-
 </html>

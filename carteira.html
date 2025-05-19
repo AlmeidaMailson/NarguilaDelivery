@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="assets/css/carteira.css" />
+  <title>Carteira Digital</title>
+</head>
+<body>
+  <div class="wallet-container">
+    <div class="wallet-card">
+      <h1>💼 Carteira Digital</h1>
+
+      <div class="saldo-box">
+        <p>Saldo Atual:</p>
+        <span id="saldo">R$ 237,50</span>
+      </div>
+
+      <form id="saqueForm">
+        <label for="chavePix">Chave Pix</label>
+        <input type="text" id="chavePix" placeholder="Informe sua chave Pix" required />
+
+        <label for="valorSaque">Valor do Saque</label>
+        <input type="number" id="valorSaque" placeholder="Ex: 100.00" required />
+
+        <label for="dataSaque">Data do Saque</label>
+        <input type="date" id="dataSaque" required />
+
+        <button type="button" onclick="solicitarSaque()">Solicitar Saque</button>
+      </form>
+
+      <div class="extrato">
+        <h2>📃 Extrato</h2>
+        <ul id="listaExtrato">
+          <li>12/05/2025 - R$ 100,00 - Solicitado</li>
+          <li>08/05/2025 - R$ 70,00 - Concluído</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/carteira.js"></script>
+</body>
+</html>
